@@ -1,0 +1,55 @@
+.car1 {
+    border: 2px solid orangered;
+    border-radius: 25px;
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    padding-bottom: 10px;
+}
+
+.images {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 150px;
+    border-radius: 15px;
+    
+}
+
+.car1:hover {
+    background-color: darkgreen;
+    transition: 1s;
+
+}
+
+
+body {font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    
+}
+
+.btn {
+    color: black;
+    background-color: darkgreen;
+    width: 200px;
+    height: 50px;
+    border-radius: 15px;
+
+}
+
+.btn:hover {
+    color: crimson;
+    background-color: yellowgreen;
+    width: 200px;
+    height: 50px;
+    border-radius: 15px;
+
+}
+
+
+p {padding: 10px;}
+

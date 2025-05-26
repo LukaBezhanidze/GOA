@@ -1,0 +1,117 @@
+/* .cxrili {
+    background-color: blueviolet;
+    color: black;
+    border-color: black;
+    border-style: dashed;
+} */
+
+
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.forms {
+    border-style:unset;
+    color: gray;
+    box-shadow: 0px 0px 30px;
+    border-radius: 10px;
+}
+
+
+
+body  {
+    background-image: url(https://th.bing.com/th/id/OIP.LRCfRJp6kK3vV5EFSJPGCAHaEK?rs=1&pid=ImgDetMain);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+#box{
+    margin-top: 200px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    background-color: #625fff66;
+    width: 450px;
+    height: 350px;
+    overflow: hidden;
+    align-content: center;
+    margin-left: auto;
+    margin-right: 250px;
+    box-shadow: 0px 0px 30px;
+    border-radius: 20px;
+
+
+}
+
+#gender {
+
+    margin-bottom: 15px;
+    background-image: linear-gradient(red, blue);
+    background-clip: text;
+
+}
+
+#texts {
+    margin-top: 120px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 10px;
+    flex-direction:column;
+    margin-right: 700px;
+    position: absolute;
+    margin-left: 300px;
+    font-size: 25px;
+
+
+
+}
+
+button {
+    border: 1px solid black;
+    background-color: #625fff66;
+    color: white;
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    background-image: linear-gradient(red, blue);
+    color: transparent;
+    background-clip: text;
+
+}
+button:hover {
+    background-color: black;
+    border-color:purple;
+
+
+}
+
+.text2 {
+
+
+    background-image: linear-gradient(red, blue);
+    color: transparent;
+    background-clip: text;
+}
+
+p {
+
+    background-image: linear-gradient(red, blue);
+    color: transparent;
+    background-clip: text;
+}
+
+::placeholder {
+
+    background-image: linear-gradient(red, blue);
+    color: transparent;
+    background-clip: text;
+    
+}
+

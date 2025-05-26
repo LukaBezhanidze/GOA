@@ -1,0 +1,29 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: green;
+
+ 
+
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.contacts {
+    font-size: larger;
+    text-align: center;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 90px;
+    
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    
+
+}

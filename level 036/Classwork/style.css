@@ -1,0 +1,19 @@
+p {
+    box-sizing: border-box;
+    width: 320px;
+    height: 320px;
+    border: color(black red green blue);
+    border-radius: 30px;
+    border-style: ridge;
+
+}
+
+
+.box  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+
+
+}

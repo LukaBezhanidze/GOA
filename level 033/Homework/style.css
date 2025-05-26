@@ -1,0 +1,40 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Coral+Pixels&display=swap');
+
+body {
+    font-family: 'Coral Pixels', sans-serif;
+}
+
+
+
+
+
+h1 {
+    color: blueviolet;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+#picture {
+
+    text-align: center;
+
+}
+
+.red-p {
+    color: red;
+    text-align: center;
+    
+    
+
+}
+
+.blue.p {
+    color:blue;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+    
+    
+
+}

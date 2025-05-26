@@ -1,0 +1,12 @@
+#unique {
+    color: green;
+    text-align-last: center;
+    border: 2px solid black; /* border-არის margin-სა და Padding-ს შორის                     */
+    margin: 20px;     /* margin- არის საერთოდ გარეთ                    */
+    padding: 10px;         /* Padding-არის კონტენტის გარეთ                     */
+    font-size: xx-large;
+    width: 900px;
+    height: 90px;
+    background-color: black;
+
+}
