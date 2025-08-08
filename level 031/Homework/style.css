@@ -1,0 +1,19 @@
+header { 
+    background-color: purple;
+
+
+}
+
+
+p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    background-color: blue;
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+
+
+}

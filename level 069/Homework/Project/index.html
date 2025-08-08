@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <h1>To Do List</h1>
+
+      <section class="left">
+        <h2>Tasks</h2>
+
+        <input type="text" id="taskInput" placeholder="Add a new task..." />
+
+        <button id="addTaskButton">Add Task</button>
+      </section>
+
+      <section class="right">
+        <h2>Task List</h2>
+
+        <h1 id="task"></h1>
+
+        <button id="clearTasksButton">Clear Tasks</button>
+      </section>
+    </main>
+
+    <script>
+      const taskinput = document.getElementById("taskInput");
+      const addTaskButton = document.getElementById("addTaskButton");
+      const taskList = document.getElementById("task");
+      const clearTasksButton = document.getElementById("clearTasksButton");
+
+      addTaskButton.addEventListener("click", function () {
+        taskList.innerHTML += `<p>${taskinput.value}</p>`;
+        taskinput.value = "";
+      });
+
+      clearTasksButton.addEventListener("click", function () {
+        taskList.innerHTML = "";
+        taskinput.value = "";
+      })
+    </script>
+  </body>
+</html>

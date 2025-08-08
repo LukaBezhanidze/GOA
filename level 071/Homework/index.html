@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+    <input type="text" id="username" placeholder="username">
+    <input type="password" id="password" placeholder="password">
+    <button id="login">Login</button>
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        const loginButton = document.getElementById('login');
+        const usernameInput = document.getElementById('username');
+        const passwordInput = document.getElementById('password');
+
+
+        loginButton.addEventListener('click', function() {
+            localStorage.setItem('username', usernameInput.value);
+            localStorage.setItem('password', passwordInput.value);
+            alert('Login successful!');
+        });
+    </script>
+</body>
+</html>

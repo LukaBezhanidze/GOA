@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="maintext">Hello World</h1>
+
+    <button id="color">Change text color</button>
+    <button id="size">Change font size</button>
+    <button id="smallersize">Change font size</button>
+    <button id="background">Change background color</button>
+
+    <script>
+      const mainText = document.getElementById("maintext");
+      const colorButton = document.getElementById("color");
+      const sizeButton = document.getElementById("size");
+      const backgroundButton = document.getElementById("background");
+      const smallerSizeButton = document.getElementById("smallersize");
+
+      const colors = ["red", "blue", "green"];
+
+      colorButton.addEventListener("click", function () {
+        let randomColor = Math.floor(Math.random() * colors.length);
+        mainText.style.color = colors[randomColor];
+      });
+
+      sizeButton.addEventListener('click', function () {
+        let biggerSize = window.getComputedStyle(mainText).fontSize;
+        biggerSize = parseInt(biggerSize) + 5;
+        mainText.style.fontSize = biggerSize + "px";
+      })
+
+       smallerSizeButton.addEventListener('click', function() {
+        let smallerSize = window.getComputedStyle(mainText).fontSize;
+        smallerSize = parseInt(smallerSize) - 5;
+        mainText.style.fontSize = smallerSize + "px";
+       })
+       
+       
+
+    </script>
+  </body>
+</html>

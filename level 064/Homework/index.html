@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <section class="rockpaperscissors">
+        <h1>Rock, Paper, Scissors</h1>
+        <p>
+          Welcome to the classic game of Rock, Paper, Scissors! Choose your move
+          and see if you can beat the computer.
+        </p>
+        <button id="rock">Rock</button>
+        <button id="paper">Paper</button>
+        <button id="scissors">Scissors</button>
+        <div>
+          <h1 id="result"></h1>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      let wincount_player = 0;
+      let wincount_computer = 0;
+
+      rock = document.getElementById("rock");
+      paper = document.getElementById("paper");
+      scissors = document.getElementById("scissors");
+      result = document.getElementById("result");
+
+      function rockpaperscissors(PlayerChoice) {
+        const choices = ["rock", "paper", "scissors"];
+        let computerChoice =
+          choices[Math.floor(Math.random() * choices.length)];
+
+        let message = "";
+
+        if (PlayerChoice === computerChoice) {
+          message = `It's a tie! You both chose ${PlayerChoice}.`;
+        } else if (
+          (PlayerChoice === "rock" && computerChoice === "scissors") ||
+          (PlayerChoice === "paper" && computerChoice === "rock") ||
+          (PlayerChoice === "scissors" && computerChoice === "paper")
+        ) {
+          wincount_player++;
+          message = `You win! Computer chose ${computerChoice}.`;
+        } else {
+          wincount_computer++;
+          message = `You lose! Computer chose ${computerChoice}.`;
+        }
+
+        result.innerHTML = `${message}<br>You chose ${PlayerChoice}. Computer chose ${computerChoice}.<br>Player Wins: ${wincount_player} | Computer Wins: ${wincount_computer}`;
+      }
+
+      rock.addEventListener("click", () => rockpaperscissors("rock"));
+      paper.addEventListener("click", () => rockpaperscissors("paper"));
+      scissors.addEventListener("click", () => rockpaperscissors("scissors"));
+    </script>
+  </body>
+</html>

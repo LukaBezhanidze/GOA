@@ -1,0 +1,102 @@
+ @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');  /*font-family-ს იმპორტი */
+*{
+    padding:0px; 
+    margin:0px;
+    box-sizing: border-box;  
+     font-family: "Karla", sans-serif; /*font family-ის შეცვლა */
+}
+
+body{
+    height:100vh;
+    display: flex;   
+     flex-direction: column;         /*ვერტიკალურად ჩამოშლა კონტენტის */
+    justify-content: center;    /* გაცენტრვა ჰორიზონტალურად */
+    align-items: center; /* გაცენტრვა ვერტიკალურად */
+    background-color: hsl(204, 43%, 93%);
+}
+
+.mainDiv{
+    border-radius: 5px; /*საერთოდ ბოქსის მომრგვალება */
+    overflow: hidden; /* დამალოს კონტენტი რომელიც ბოქსიდან გადმოდის */
+}
+
+.firstDiv{
+    background-color: white;
+    height:200px;       /* პირველი დივიზიის აგებულება ფერი და დაშორება */
+    padding: 30px;
+}
+
+.paragraph1{
+    color:#26a8a6;
+    font-weight: 700;   /* პარაგრაფის ფერი ფონტის წონა ზომა და დაშორება */
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.paragraph2{
+    color:#BEDF31;
+    font-weight: 500; /* პარაგრაფის ფერი ფონტის წონა ზომა და დაშორება */
+    margin-bottom: 15px;
+}
+
+.paragraph3{
+    color:hsl(218, 22%, 67%); /* პარაგრაფის ფერი */
+}
+
+.twoDivsTogether{
+    display: flex;
+     flex-direction: row;    /*ქვედა ორი დივიზიის ჰორიზონტალურ ხაზზე გასწორება */
+}
+
+.first{
+    background-color: #2BB4B1;
+    /* display: flex;
+    flex-direction: column; */
+    padding: 30px;
+    width:50%;
+}
+
+.paragraph4{
+    color:white;
+    font-weight: 700; /* პარაგრაფის ფერი ფონტის წონა ზომა და დაშორება */
+    margin-bottom: 15px;
+}
+
+h2{
+    color:white;
+    margin-bottom: 10px;  /* h2-ს ფერი ფონტის წონა ზომა და დაშორება */
+}
+
+h2 span{
+    color:hsl(179, 61%, 52%);           /*ფერი*/
+    font-size: 14px;            /* h2-ს ფერი ფონტის წონა ზომა და დაშორება */
+    vertical-align: middle;     /*ვერტიკალურად გასწორება*/
+}
+
+.paragraph5{
+    color:white;
+    font-size: 14px; /* პარაგრაფის ფერი ფონტის წონა ზომა და დაშორება */
+    margin-bottom: 25px;
+}
+
+button{
+    background-color: #BEDF31;  /* ღილაკის უკანაფონის ფერი */
+     border:none;  /*ბორდერის მოცილება */
+     width:100%; /*მაქსიმალურად დაიკავოს ადგილი სიგანეში (ვერტ) */
+     padding: 13px; /*დაშორება */
+     border-radius: 5px;   /*მომრგვალება   */
+     color:white; /*ტექსტის ფერი */
+     font-weight: 700; /*ფონტის წონა/ხილვადობა */
+}
+
+.second{
+     background-color: #49BEBD;  /*მესამე ბოქსის ფერი */
+     padding: 30px;   /* დაშორება       */
+     width:50%; /*რომ ქვემოთ მყოფ ორივე ბოქსმა გაინაწილონ ადგილი ზუსტად ანუ 50/50ზე */
+}
+
+.paragraph6{
+    color:hsl(204, 43%, 93%);
+    font-size: 14px;          /* პარაგრაფის ფერი ფონტის წონა ზომა და დაშორება */
+    margin-bottom: 3px;
+}

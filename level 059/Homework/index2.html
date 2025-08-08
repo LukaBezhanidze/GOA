@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #mainText {
+            font-size: 20px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="mainText">Number</h1>
+
+    <button id="btn">Press here to increase number</button>
+
+    <script>
+        let count = 0;
+        document.getElementById("btn").addEventListener("click", function() {
+            count++;
+            document.getElementById("mainText").innerHTML = `Hello World! Count: ${count}`;
+        });
+
+
+
+    </script>
+</body>
+</html>

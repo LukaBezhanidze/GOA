@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="script" href="script.js">
+</head>
+
+<body>
+
+    <input type="text" placeholder="Enter the number">
+    <input id="button" type="button" value="Click Me">
+
+
+
+
+    <script>
+
+        let secretnum = 10
+
+
+        let button = document.getElementById("button");
+        let input = document.querySelector("input[type='text']");
+
+        button.addEventListener("click", function () {
+
+            if (input.value == secretnum) {
+                alert("number is correct");
+
+            }
+
+            else if (input.value < secretnum) {
+                alert("number is too low");
+            }
+
+            else if (input.value > secretnum) {
+                alert("number is too high");
+            }
+
+            else {
+                if (input.value == typeof Text) {
+                    alert("Please enter a number");
+                }
+            }
+
+        });
+    </script>
+</body>
+
+</html>

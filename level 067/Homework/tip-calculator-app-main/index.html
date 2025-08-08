@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="leftside">
+      <h4>Bill</h4>
+      <input
+        type="number"
+        id="billinput"
+        placeholder="0"
+        min="0"
+        step="0.01"
+      />
+      <h4>Select Tip %</h4>
+      <div class="tip-buttons">
+        <button data-tip="5">5%</button>
+        <button data-tip="10">10%</button>
+        <button data-tip="15">15%</button>
+        <button data-tip="25">25%</button>
+        <button data-tip="50">50%</button>
+        <input type="number" id="custom-tip" placeholder="Custom" />
+      </div>
+
+    <div class="pplnumber">
+      <input
+        type="number"
+        id="peopleinput"
+        placeholder="Number of People"
+        min="1"
+        step="1"
+    </div>
+
+
+    <div class="rightside">
+      <div class="tipamount">
+        <h4>Tip Amount</h4>
+        <p>/ person</p>
+        <h1 id="tipamount">$0.00</h1>
+      </div>
+      <div class="totalamnt">
+        <h4>Total</h4>
+        <p>/ person</p>
+        <h1 id="totalamnt">$0.00</h1>
+      </div>
+      <button id="resetbutton">Reset</button>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+
+    <script>
+      const billInput = document.getElementById("billinput");
+      const customTipInput = document.getElementById("custom-tip");
+      const peopleInput = document.getElementById("peopleinput");
+      const tipAmountDisplay = document.getElementById("tipamount");
+      const totalAmountDisplay = document.getElementById("totalamnt");
+      const resetButton = document.getElementById("resetbutton");
+
+
+
+
+
+billInput.addEventListener("input", function () {
+  const bill = parseFloat(billInput.value);
+  if (!isNaN(bill)) {
+    totalAmountDisplay.textContent = "$" + bill.toFixed(2);
+  }
+});
+
+      tipButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        selectedTip = parseFloat(btn.dataset.tip);
+        calculate();
+      });
+    });
+
+    customTipInput.addEventListener("input", function () {
+      const customTip = parseFloat(customTipInput.value);
+      if (!isNaN(customTip)) {
+        selectedTip = customTip;
+        
+      }
+    });
+
+
+    tipAmountDisplay.textContent = "$" + selectedTip.toFixed(2);
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    function resetAll() {
+    billInput.value = '';
+    peopleInput.value = '';
+    customTipInput.value = '';
+    tipAmountDisplay.textContent = '$0.00';
+    totalAmountDisplay.textContent = '$0.00';
+    }
+
+
+    resetButton.addEventListener("click", resetAll);
+
+
+
+    </script>
+  </body>
+</html>

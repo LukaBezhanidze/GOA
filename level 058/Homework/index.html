@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1 id="h1blank"></h1>
+
+
+    <button id="tails">tails</button>
+    <button id="heads">heads</button>
+
+
+
+    <script>
+
+        document.getElementById("tails").addEventListener("click", function() {
+            document.getElementById("h1blank").innerHTML = "Tails";
+        });
+        document.getElementById("heads").addEventListener("click", function() {
+            document.getElementById("h1blank").innerHTML = "Heads";
+        });
+
+
+
+
+    </script>
+
+</body>
+</html>

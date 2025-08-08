@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Loy - Personal Website</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+  * {
+    margin: 0; padding: 0; box-sizing: border-box;
+  }
+  body, html {
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    background: #0a0614;
+    color: #dcd6ff;
+  }
+  body {
+    background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  header {
+    background: rgba(35, 20, 60, 0.85);
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 0 15px #6f5fffaa;
+  }
+  .logo {
+    font-weight: 700;
+    font-size: 2rem;
+    color: #a283ff;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    user-select: none;
+  }
+  .logo .eye {
+    position: relative;
+    width: 26px;
+    height: 26px;
+    border: 2.5px solid #a283ff;
+    border-radius: 50% / 60%;
+    overflow: hidden;
+    cursor: default;
+  }
+  .eye .pupil {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    background: #a283ff;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    animation: blink 4s infinite;
+    transform-origin: center center;
+  }
+  @keyframes blink {
+    0%, 15%, 100% {
+      height: 10px;
+      background: #a283ff;
+    }
+    50% {
+      height: 0;
+      background: transparent;
+    }
+  }
+  nav a {
+    margin-left: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #c8baff;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+  }
+  nav a:hover {
+    color: #fff;
+  }
+  main {
+    flex-grow: 1;
+    background: rgba(20, 10, 40, 0.7);
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 30px 35px;
+    border-radius: 14px;
+    box-shadow: 0 0 40px #7d6effaa;
+    text-align: center;
+    font-size: 1.3rem;
+    line-height: 1.6;
+  }
+  main span.placeholder {
+    color: #a283ff;
+    font-weight: 700;
+    border-bottom: 1.5px dashed #a283ff;
+    cursor: text;
+  }
+  .social {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  .social a {
+    color: #a283ff;
+    font-size: 1.7rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  .social a:hover {
+    color: #dcd6ff;
+  }
+  footer {
+    background: rgba(35, 20, 60, 0.85);
+    text-align: center;
+    padding: 20px 15px;
+    font-size: 0.9rem;
+    color: #9a90ff;
+    box-shadow: 0 -3px 12px #6f5fff88;
+  }
+  footer .contacts {
+    margin-bottom: 8px;
+    min-height: 24px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    L
+    <div class="eye"><div class="pupil"></div></div>
+    y
+  </div>
+  <nav>
+    <a href="#">Clips</a>
+    <a href="#">Music</a>
+  </nav>
+</header>
+
+<main>
+  Hi, I’m Loy <span class="placeholder">[Last Name]</span>, living in <span class="placeholder">[Living Place]</span>. I love <span class="placeholder">[Hobbies]</span> and creating cool things. Welcome to my personal space on the web.
+
+  <div class="social" aria-label="social media links">
+    <a href="#" aria-label="Discord" tabindex="0" title="Discord">🟣</a>
+    <a href="#" aria-label="Facebook" tabindex="0" title="Facebook">📘</a>
+    <a href="#" aria-label="Steam" tabindex="0" title="Steam">🎮</a>
+  </div>
+</main>
+
+<footer>
+  <div class="contacts">[Contact info placeholder]</div>
+  &copy; 2025 Loy. All rights reserved.
+</footer>
+
+</body>
+</html>

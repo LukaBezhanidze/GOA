@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+<body>
+  <button id="button">Click here</button>
+
+  <div id="result"></div>
+
+  <script>
+    const button = document.getElementById("button");
+    const result = document.getElementById("result");
+
+    function checkIt(n) {
+      if (n % 2 === 0) {
+        return "even";
+      } else {
+        return "odd";
+      }
+    }
+
+    button.addEventListener("click", function () {
+      let number1 = Number(prompt("Enter the first number"));
+      let number2 = Number(prompt("Enter the second number"));
+      let sum = number1 + number2;
+
+      result.innerHTML = `
+        <p>Sum is ${sum}</p>
+        <p>${number1} is ${checkIt(number1)}</p>
+        <p>${number2} is ${checkIt(number2)}</p>
+      `;
+    });
+  </script>
+</body>
+
+</html>

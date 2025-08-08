@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function Car(make, model, year, color) {
+        this.make = make;
+        this.model = model;
+        this.year = year;
+        this.color = color;
+      }
+
+      let cars = [
+        new Car("Toyota", "Corolla", 1998, "Red"),
+        new Car("Honda", "Civic", 2019, "Blue"),
+        new Car("Ford", "Focus", 2021, "Black"),
+      ];
+
+      function getDescription(cars) {
+        cars.forEach((car) => {
+          if (car.year < 2000) {
+            console.log(
+              `This car (${car.make} ${car.model}) is older than 2000.`
+            );
+          } else {
+            console.log(
+              `Make: ${car.make}, Model: ${car.model}, Year: ${car.year}, Color: ${car.color}`
+            );
+          }
+        });
+      }
+
+      getDescription(cars);
+
+
+
+      function books(title, author, year, genre, ) {
+        this.title = title;
+        this.author = author;
+        this.year = year;
+        this.genre = genre;
+      }
+
+      let bookList = [
+        new books("To Kill a Mockingbird", "Harper Lee", 1960, "Fiction", ),
+        new books("1984", "George Orwell", 1949, "Dystopian",),
+        new books("The Great Gatsby", "F. Scott Fitzgerald", 1925, "Classic", ) ,
+      ];
+
+      if (bookList.len <= 3) {
+        bookList.forEach((book) => {
+          console.log(
+            `Title: ${book.title}, Author: ${book.author}, Year: ${book.year}, Genre: ${book.genre}`
+          );
+        });
+      } else {
+        console.log("Error: Book has less letters than 3 ");
+      }
+
+
+      function Movies(title, director, year, genre, isHit) {
+        this.title = title;
+        this.director = director;
+        this.year = year;
+        this.genre = genre;
+        this.isHit = isHit;
+      }
+
+      let movielist = [
+        new Movies("Inception", "Christopher Nolan", 2010, "Sci-Fi", true),
+        new Movies("The Godfather", "Francis Ford Coppola", 1972, "Crime", false),
+        new Movies("Pulp Fiction", "Quentin Tarantino", 1994, "Drama", true),
+      ];
+
+
+      function ishit(movielist) {
+        if (movielist.isHit === true) {
+          console.log(
+            `Title: ${movielist.title}, Director: ${movielist.director}, Year: ${movielist.year}, Genre: ${movielist.genre}, Hit: ${movielist.isHit}`
+          );
+        } else {
+          console.log(
+            `Title: ${movielist.title} is not a hit movie.`
+          );
+        }
+      }
+
+
+class Rectangle {
+  constructor(width, height) {
+    this.width = width;
+    this.height = height;
+  }
+
+  // Getter for area
+  get area() {
+    return this.width * this.height;
+  }
+
+  // Setter for dimensions
+  set dimensions(value) {
+    if (typeof value === "number" && value > 1) {
+      this.width = value;
+      this.height = value;
+    } else {
+      console.log("Invalid dimensions");
+    }
+  }
+}
+
+// ობიექტების შექმნა
+const rect1 = new Rectangle(5, 10);
+const rect2 = new Rectangle(2, 3);
+
+// area - ს გამოძახება
+console.log("rect1 area:", rect1.area); // 50
+console.log("rect2 area:", rect2.area); // 6
+
+// dimensions სეტერის გამოყენება
+rect1.dimensions = 7;
+console.log("rect1 area after update:", rect1.area); // 49
+
+// არასწორი მნიშვნელობის გადაცემა
+rect2.dimensions = 0; // Console: Invalid dimensions
+console.log("rect2 area after invalid update:", rect2.area); // 6 (უცვლელი)
+
+
+
+
+      
+
+
+
+    </script>
+  </body>
+</html>

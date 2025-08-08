@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom right, #f8f4fc, #ffffff);
+    color: #4a3f5c;
+    padding: 40px;
+    height: 100vh;
+    display: flex;
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.mainbox {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.upper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.upper-left {
+    flex: 1;
+    min-width: 300px;
+}
+
+.upper-left h1 {
+    font-size: 40px;
+    color: #3a0d52;
+    margin-bottom: 20px;
+}
+
+.upper-left-p {
+    color: #8a8493;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.upper-right {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 12px;
+}
+
+.upper-right-box {
+    background-color: #f4eefc;
+    border-radius: 10px;
+    padding: 14px 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    font-weight: 600;
+    color: #3a0d52;
+}
+
+#report-guru {
+    
+    margin-left: 40px;
+}
+
+#best-tech {
+    margin-left: 80px;
+}
+
+
+.lower {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+}
+
+.lower-box {
+    background-color: #3a0d52;
+    color: white;
+    border-radius: 12px;
+    padding: 24px;
+    flex: 1;
+    min-width: 280px;
+    max-width: 32%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    position: relative;
+}
+
+.lower-box img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.lower-box h2 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.lower-box p {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.lower-box-p {
+    margin-top: 10px;
+    font-style: italic;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.upper-left-p {
+    margin-right: 100px;
+}
+
+.upper-left h1 {
+    margin-right: 150px;
+}
+
+.lower-box:nth-child(1) {
+    margin-top: 0px;
+}
+
+.lower-box:nth-child(2) {
+    margin-top: 40px;
+}
+
+.lower-box:nth-child(3) {
+    margin-top: 80px;
+}
+
+@media (max-width: 768px) {
+
+    .lower {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .lower-box {
+        max-width: 100%;
+        margin-top: 0 !important; /* Remove stagger for mobile */
+    }
+}
+
